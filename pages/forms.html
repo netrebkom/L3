@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Section for "Form" -->
+    <section id="form">
+        <h2>Form Demonstration</h2>
+        <!-- Form with various input elements -->
+        <form action="#" method="post">
+            <!-- Personal Information Table -->
+            <fieldset>
+                <legend>Your Information</legend>
+                <div class="form-row">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-row">
+                    <label for="age">Your Age:</label>
+                    <input type="text" id="age" name="age" placeholder="Enter your age" required>
+                </div>
+            </fieldset>
+
+            <!-- Password Input -->
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Gender Selection -->
+            <div class="form-row">
+                <label>Select your gender:</label>
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </div>
+            </div>
+
+            <!-- Remember Me Checkbox -->
+            <div class="form-row">
+                <label>
+                    <input type="checkbox" name="remember" value="1"> Remember me
+                </label>
+            </div>
+
+            <!-- City Selection -->
+            <div class="form-row">
+                <label for="city">Select your city in Ukraine:</label>
+                <select id="city" name="city">
+                    <option value="kyiv">Kyiv</option>
+                    <option value="lviv">Lviv</option>
+                    <option value="odessa">Odessa</option>
+                    <!-- Add more city options as needed -->
+                </select>
+            </div>
+
+            <!-- Message Input -->
+            <div class="form-row">
+                <label for="message">Enter your message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-row">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
